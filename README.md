@@ -19,7 +19,6 @@ This is not a single prompt. It is a **Model Routing Mesh** designed to optimize
 3.  **Agent B (Engineering):** Reads the PM's pitch and generates a technical rebuttal.
 4.  **Agent C (Summarizer):** Compresses the conflict into high-signal bullet points.
 5.  **Agent D (CEO):** Weighs the trade-offs and issues a binary GO/NO-GO verdict.
-6.  **Persistence:** The entire transcript is logged to **Supabase (PostgreSQL)** for audit trails.
 
 
 
@@ -28,7 +27,7 @@ This is not a single prompt. It is a **Model Routing Mesh** designed to optimize
 
 ## 🧠 The "Model Mesh" (Routing Logic)
 
-I deliberately avoided using a single "God Model" (like GPT-4) for everything. Instead, I routed tasks via **OpenRouter** to the best-fit model for the specific cognitive task:
+I deliberately avoided using a single "God Model" (like GPT-5) for everything. Instead, I routed tasks via **OpenRouter** to the best-fit model for the specific cognitive task:
 
 | Role | Model Used | Reasoning |
 | :--- | :--- | :--- |
@@ -41,7 +40,6 @@ I deliberately avoided using a single "God Model" (like GPT-4) for everything. I
 * **Orchestration:** Python (Raw State Machine, no LangChain)
 * **Gateway:** OpenRouter API
 * **Frontend:** Streamlit
-* **Database:** Supabase (PostgreSQL)
 * **Observability:** Built-in error handling and retry logic.
 
 ## 🚀 Quick Start
