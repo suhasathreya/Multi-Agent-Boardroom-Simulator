@@ -1,4 +1,4 @@
-**# Multi-Agent-Boardroom-Simulator
+**Multi-Agent-Boardroom-Simulator**
 Boardroom debate simulator featuring a PM, an Engineer, and a CEO (judge)
 **# 👔 The Boardroom Simulator (Agent 002)
 
